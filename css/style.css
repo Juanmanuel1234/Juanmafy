@@ -144,3 +144,24 @@ a{
         padding-left: 0rem;
     }
 }
+
+/* ICONS */
+
+.icon{ /*Structure*/
+    width: 40px;
+    height: 40px;
+}
+
+.icon--primary{
+    fill: var(--color-primary); /*THIS PROPERTY ONLY APPLY FOR SVG IMAGES*/
+}
+
+.icon-container{
+    background: #f3f9fa;
+    width: 64px; /*We use PX because the mobile or desktop icon are allways the same size*/
+    height: 64px;
+    border-radius:100%;
+    display: inline-flex; /*we don not use "inline" because we do not want the line break*/
+    justify-content: center;
+    align-items: center;
+}
