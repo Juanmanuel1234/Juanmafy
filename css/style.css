@@ -6,6 +6,9 @@
     --color-body: #918ca4;
 }
 
+*, *::after, *::before{
+    box-sizing: border-box;
+}
 /* TYPOGRAPHY */
 
 html{ /*62.5% of 16px(default value) this means 10px so, 1rem =10px */
@@ -164,4 +167,93 @@ a{
     display: inline-flex; /*we don not use "inline" because we do not want the line break*/
     justify-content: center;
     align-items: center;
+}
+
+/* Buttons */
+
+.btn{
+    border-radius: 40px;
+    border: 0;
+    cursor: pointer; /* the button looks like an anchor*/
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 2rem 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap; /*i do not want the text in the button wrap onto a second line*/
+    transition: background 0.7s, color 0.7s;
+}
+
+.btn--primary{
+    background: var(--color-primary);
+    color: #f3f9fa;    
+}
+
+.btn--primary:hover{
+    background: #085cc9;
+    color: #f3f9fa;
+}
+
+.btn--secondary{
+    background: var(--color-secondary);
+    color: #f3f9fa;
+    border: var(--color-secondary);
+}
+
+.btn--secondary:hover{
+    background: #0c414a;
+    color: #f3f9fa;
+}
+
+.btn--accent{
+    background: var(--color-accent);
+    color: #f3f9fa;
+}
+
+.btn--accent:hover{
+    background: #651a07;
+    color: #f3f9fa;
+}
+
+.btn--block{
+    width: 100%;
+    display: inline-block;
+}
+
+.btn--outline{
+    background: #f3f9fa;
+    color: var(--color-headings);
+    border: 2px solid var(--color-headings);
+}
+
+.btn--outline:hover{
+    background: var(--color-headings);
+    color: #f3f9fa;
+}
+
+@media screen and (min-width: 1024px){
+    .btn{
+        font-size: 3rem;
+    }
+}
+
+/* INPUTS */
+.input{
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    color: var(--color-headings);
+    font-size: 2rem;
+    outline: 0;
+    padding: 1.5rem 3.5rem;
+}
+
+::placeholder{
+    color: #cdcbd7;
+}
+
+@media screen and (min-width: 1024px){
+    .input{
+        font-size: 1.5rem;
+    }
 }
