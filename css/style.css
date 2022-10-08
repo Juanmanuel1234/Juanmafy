@@ -233,6 +233,11 @@ a{
     color: #f3f9fa;
 }
 
+.btn--stretched{
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
 .btn--block{
     width: 100%;
     display: inline-block;
@@ -489,5 +494,47 @@ a{
     }
     .testimonial .quote{
         margin-left: 6rem;
+    }
+}
+
+/* Callouts */
+
+.callout{
+    padding: 4rem;
+    border-radius: 5px;
+}
+
+.callout--primary{
+    background:  var(--color-primary);
+    color: #fff;
+}
+
+.callout__heading{
+    margin-top: 0;
+    color: #fff;
+    font-size: 3rem;
+}
+
+.callout .btn{
+    justify-self: center; /*in stead of use "justify-items"  we use justify-self for the grid item*/
+    align-self: center;
+}
+
+.callout__content{
+    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+    .callout .grid--1x2{
+        grid-template-columns: 1fr auto; /*first "1fr" means use allthe space available in that columns
+         the "auto" means use the space necesary for the content. So i got 2 columns differents sizes*/
+    }
+    
+    .callout__content{
+        text-align: left;
+    }
+    .callout .btn{
+        justify-self: start;
+        margin: 0 2rem;
     }
 }
