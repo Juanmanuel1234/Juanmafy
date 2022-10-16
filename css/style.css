@@ -345,6 +345,7 @@ a{
 
 .plan{
     transition: transform 0.2s ease-out;
+    margin: 0 1rem;
 }
 
 
@@ -422,6 +423,8 @@ a{
 .media{
     display: flex;
     margin-bottom: 4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .media__image{
@@ -434,6 +437,10 @@ a{
 
 .media__body{
     margin: 0 2rem;
+}
+
+.media__text{
+    margin-bottom: 10rem;
 }
 
 /* Quotes */
@@ -526,6 +533,22 @@ a{
     overflow: hidden;
 }
 
+@media screen and (min-width: 319px) and (max-width: 374px){
+    .testimonial__image-container{
+        right: 17px;
+    }
+    .testimonial__icon{
+        right: -17px;
+    }
+    .icon-container{
+        width: 36px;
+        height: 36px;
+    }
+    .icon--small{
+        width: 25px;
+        height: 25px;
+    }
+}
 @media screen and (min-width: 767px){
     .testimonial .quote, .testimonial .quote__author{
         font-size: 2.4rem;
@@ -747,7 +770,7 @@ a{
 .block-domain .input-group{
     box-shadow: 0 0 30px 20px #e6ebee;
     border: 0;
-    margin: 4rem 0;
+    margin: 4rem 1rem;
 }
 
 .block-domain__prices{
@@ -794,7 +817,7 @@ a{
 
 .feature{
     gap: 4rem 2rem;
-    margin: 12rem;
+    margin: 12rem 4rem;
 }
 
 .feature:first-of-type{
