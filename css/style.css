@@ -743,7 +743,7 @@ a{
 
 /* Domain Block */
 
-.block-domian{
+.block-domian .input-group{
     box-shadow: 0 0 30px 20px #e6ebee;
     border: 0;
     margin: 4rem 0;
