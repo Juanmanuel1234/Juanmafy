@@ -613,7 +613,7 @@ a{
 
 .block{
     --padding-vertical: 6rem;
-    padding: var(--padding-vertical)  2rem;
+    padding: var(--padding-vertical)  0.5rem;
 }
 
 .block__title{
