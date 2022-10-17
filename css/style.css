@@ -832,7 +832,7 @@ a{
     width: 100%;
 }
 
-@media screen and (min-wdth: 768px) { /*It is not working*/
+@media screen and (min-width: 768px) { /*It is not working*/
     .feature:nth-of-type(even) .feature__content {
         order: 2;
     }
