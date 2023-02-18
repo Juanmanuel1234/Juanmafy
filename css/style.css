@@ -66,6 +66,11 @@ p{
     }
 }
 
+.logo{
+    height: 2rem;
+    width: 8rem ;
+}
+
 /* LINKS */
 
 a{
